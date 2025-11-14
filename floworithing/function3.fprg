@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="function3"/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-10 10:05:23 p.&#8239;m."/>
+        <attribute name="created" value="VXN1YXJpbztERVNLVE9QLTdKVEc4OEI7MjAyNS0xMS0xMDswOToyODoxMyBwLuKAr20uOzExNDYz"/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLTdKVEc4OEI7MjAyNS0xMS0xMDsxMDowNToyMyBwLuKAr20uOzE7MTE1NTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="message" type="String" array="False" size=""/>
+            <declare name="username" type="String" array="False" size=""/>
+            <output expression="&quot;enter your name: &quot;" newline="True"/>
+            <input variable="username"/>
+            <assign variable="message" expression="showgreeting(username)"/>
+            <output expression="message" newline="True"/>
+        </body>
+    </function>
+    <function name="showgreeting" type="String" variable="msg">
+        <parameters>
+            <parameter name="userName" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="msg" type="String" array="False" size=""/>
+            <assign variable="msg" expression="&quot; hola &quot; &amp; userName &amp; &quot; bienvenido(a)&quot;"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="function1"/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-10 10:09:18 a.&#8239;m."/>
+        <attribute name="created" value="VXN1YXJpbztERVNLVE9QLTdKVEc4OEI7MjAyNS0xMS0xMDswOTozMjo0NSBhLuKAr20uOzExNDQ4"/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLTdKVEc4OEI7MjAyNS0xMS0xMDsxMDowOToxOCBhLuKAr20uOzE7MTE1NTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="username" type="String" array="False" size=""/>
+            <output expression="&quot;enter your name&quot;" newline="True"/>
+            <input variable="username"/>
+            <call expression="ShowGreeting (username)"/>
+        </body>
+    </function>
+    <function name="Showgreeting" type="None" variable="">
+        <parameters>
+            <parameter name="userName" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot; hola &quot; &amp; userName &amp; &quot; bienvenido &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
