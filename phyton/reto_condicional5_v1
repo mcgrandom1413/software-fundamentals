@@ -1,0 +1,32 @@
+tipo_id = input("Tipo de identificación (C.C, PS, CE, CI): ")
+nombres = input("Nombres: ")
+apellidos = input("Apellidos: ")
+genero = input("Género (M/F): ").lower()
+anio_nacimiento = int(input("Año de nacimiento: "))
+direccion = input("Dirección: ")
+telefono = input("Teléfono: ")
+salario = float(input("Salario: "))
+
+# Cálculo del aumento
+if salario <= 1200000:
+    if genero == "f":
+        aumento = salario * 0.10
+    else:
+        aumento = salario * 0.08
+
+elif salario < 2000000:
+    aumento = salario * 0.05
+
+else:  # salario >= 2000000
+    if genero == "f":
+        aumento = salario * 0.03
+    else:
+        aumento = salario * 0.025
+
+salario_final = salario + aumento
+
+print("------ RESULTADOS ------")
+print("Nombre:", nombres, apellidos)
+print("Salario inicial:", salario)
+print("Aumento aplicado:", aumento)
+print("Salario final:",salario_final)

@@ -25,3 +25,4 @@ for i in range(1, numero_lanzamientos + 1):
 # Resultados finales
 print("\nFin de los lanzamientos.")
 print("La suma total de todos los valores es:", suma_total)
+print("Gracias por jugar.")
